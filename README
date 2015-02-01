@@ -15,12 +15,16 @@ RT VERSION
 
 INSTALLATION
     perl Makefile.PL
+    
     make
+    
     make install
         May need root permissions
+    
     make initdb
     
     Edit your /opt/rt4/etc/RT_SiteConfig.pm
+    
         If you are using RT 4.2 or greater, add this line:
 
             Plugin('RT::Extension::FormTools::QueueRequest');
