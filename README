@@ -1,0 +1,48 @@
+NAME
+    RT-QueueRequest-FormTools - Multi Page Queue Request Form wizard
+
+DESCRIPTION
+    This Extension provides a multi page queue request wizard based on Best Practicals
+    RT-Extension-FormTools (which is needed too). This is just a test to see what is
+    possible to build with this Extension.
+    
+    IMPORTANT: Don't install this extension without reviewing etc/initialdata to fit to 
+    your exsisting RT Installation. For a fresh installation or test - have fun directly 
+    with it!
+
+RT VERSION
+    Works with RT 4.0 and 4.2
+
+INSTALLATION
+    perl Makefile.PL
+    make
+    make install
+        May need root permissions
+    make initdb
+    
+    Edit your /opt/rt4/etc/RT_SiteConfig.pm
+        If you are using RT 4.2 or greater, add this line:
+
+            Plugin('RT::QueueRequest::FormTools');
+
+        For RT 4.0, add this line:
+
+            Set(@Plugins, qw(RT::QueueRequest::FormTools));
+
+        or add RT::QueueRequest::FormTools to your existing @Plugins line.
+
+    Clear your mason cache
+            rm -rf /opt/rt4/var/mason_data/obj
+
+    Restart your webserver
+
+AUTHOR
+    Torsten Brumm, PicturePunxx.de <tbrumm@mac.com>
+
+
+LICENSE AND COPYRIGHT
+    This software is Copyright (c) 2014 by Best Practical Solutions
+
+    This is free software, licensed under:
+
+      The GNU General Public License, Version 2, June 1991
