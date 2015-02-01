@@ -1,6 +1,6 @@
 use inc::Module::Install;
 
-RTx 'RT-QueueRequest-FormTools';
+RTx 'RT-Extension-FormTools-QueueRequest';
 license  'gplv2';
 
 
