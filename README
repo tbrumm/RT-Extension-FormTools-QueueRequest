@@ -10,6 +10,10 @@ DESCRIPTION
     your exsisting RT Installation. For a fresh installation or test - have fun directly 
     with it!
 
+ATTENTION
+    This Extension is only for demonstration of RT-Extension-FormTools and pls. dont
+    install this in a production environment without preview etc/initialdata !!!
+
 RT VERSION
     Works with RT 4.0 and 4.2
 
