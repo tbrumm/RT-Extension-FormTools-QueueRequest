@@ -14,7 +14,7 @@
 <hr>
 <h1>Queue Request Form - Queue Member and User Information</h1>
 
-<& /FormTools/Field, name => 'Queue Watcher', label => 'Queue Member', default => 'Enter Queue Watcher Mail Addresses' &>
+<& /FormTools/Field, name => 'Queue Watcher', label => 'Queue Watcher', default => 'Enter Queue Watcher Mail Addresses' &>
 <& /FormTools/Field, name => 'Queue Member', label => 'Queue Member', default => 'Enter Queue Member Mail Addresses' &>
 <& /FormTools/Field, name => 'Queue Admins', label => 'Queue Admins', default => 'Enter Queue Admin Mail Addresses' &>
 
