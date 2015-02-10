@@ -1,0 +1,19 @@
+<&|/FormTools/Form, next => 'queue_info' &>
+
+<h1>Queue Request Form</h1>
+
+<hr>
+<h2>Requestor Details</h2>
+
+<& /FormTools/Field, name => 'Requestors', label => 'Requested By', default => $session{'CurrentUser'}->EmailAddress  &> 
+
+<hr>
+<h2>Queue Usage Area Information</h2>
+
+
+<& /FormTools/Field, name => 'Functional Unit', default => 'Corporate IT' &> 
+
+<& /FormTools/Field, name => 'Usage Area', default => 'Internal' &> 
+<hr>
+<& /FormTools/Next &>
+</&>

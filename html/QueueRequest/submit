@@ -1,0 +1,21 @@
+<%init>
+
+my ($ticket, @results) = CreateTicket(
+    %{$m->request_args},
+    Subject => 'New Queue request',
+    Queue   => $m->notes('queue')->id,
+    Status => 'new',
+    Requestors => $session{'CurrentUser'}->EmailAddress,
+);
+
+
+</%init>
+
+<&|/FormTools/Form, next => '' &>
+<& /Elements/ListActions, actions => \@results &>
+
+<h1>New Queue Request submitted</h1>
+
+<h2>Thanks! Your request ([<%$RT::rtname%> #<%$ticket->id%>]) has been submitted. It usually takes about 48 hours.</h2>
+
+</&>

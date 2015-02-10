@@ -1,0 +1,35 @@
+<&|/FormTools/Form, next => 'confirm', validation => 1 &>
+ 
+<h1>Queue Request Details</h1>
+<hr>
+
+<h1>Queue Request Form - Extra Information</h1>
+
+<& /FormTools/Field, name => 'Queue Name', label => 'Queue Name', default => 'Enter Queue Name' &>
+<& /FormTools/Field, name => 'Queue Description', label => 'Queue Description', default => 'Enter Queue Description' &>
+<& /FormTools/Field, name => 'Queue Mail', label => 'Queue Mail', default => 'Enter Queue Mail' &>
+<& /FormTools/Field, name => 'Cost Center Code', label => 'Cost Center Code', default => 'Enter Cost Center Code' &>
+<& /FormTools/Field, name => 'Queue Responsible', label => 'Queue Responsible', default => $session{'CurrentUser'}->EmailAddress &>
+
+<hr>
+<h1>Queue Request Form - Queue Member and User Information</h1>
+
+<& /FormTools/Field, name => 'Queue Watcher', label => 'Queue Member', default => 'Enter Queue Watcher Mail Addresses' &>
+<& /FormTools/Field, name => 'Queue Member', label => 'Queue Member', default => 'Enter Queue Member Mail Addresses' &>
+<& /FormTools/Field, name => 'Queue Admins', label => 'Queue Admins', default => 'Enter Queue Admin Mail Addresses' &>
+
+<hr>
+<h1>Queue Request Form - Extra Information</h1>
+
+<& /FormTools/Field, name => 'Queue Start', label => 'Queue Start' &>
+<& /FormTools/Field, name => 'Queue End', label => 'Queue End' &>
+<& /FormTools/Field, name => 'Storage Period', default => '6 Months' &>
+<& /FormTools/Field, name => 'Ticket Volume', label => 'Ticket Volume', default => 'Enter amount of tickets' &>
+
+<hr>
+<& /FormTools/Next &>
+</&>
+
+<%INIT>
+#Do some username validation
+</%INIT>
