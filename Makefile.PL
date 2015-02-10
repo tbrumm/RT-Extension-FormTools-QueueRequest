@@ -10,5 +10,4 @@ requires_rt_plugin 'RT::Extension::FormTools';
 
 
 sign;
-auto_install;
 WriteAll;
