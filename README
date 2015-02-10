@@ -22,6 +22,7 @@ INSTALLATION
         May need root permissions
     
     make initdb
+        May need root permissions
     
     Edit your /opt/rt4/etc/RT_SiteConfig.pm
     
