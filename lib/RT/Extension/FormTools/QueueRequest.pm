@@ -1,12 +1,12 @@
 use strict;
 use warnings;
-package RT::QueueRequest::FormTools;
+package RT::Extension::FormTools::QueueRequest;
 
 our $VERSION = '0.01';
 
 =head1 NAME
 
-RT-QueueRequest-FormTools - Example of a FormTools form
+RT-Extension-FormTools-QueueRequest - Example of a FormTools form
 
 =head1 INSTALLATION
 
@@ -36,11 +36,11 @@ in case changes need to be made to your database.
 
 If you are using RT 4.2 or greater, add this line:
 
-    Plugin('RT::QueueRequest::FormTools');
+    Plugin('RT::Extension::FormTools::QueueRequest');
 
 For RT 4.0, add this line:
 
-    Set(@Plugins, qw(RT::QueueRequest::FormTools));
+    Set(@Plugins, qw(RT::Extension::FormTools::QueueRequest));
 
 or add C<RT::Example::FormTools> to your existing C<@Plugins> line.
 
